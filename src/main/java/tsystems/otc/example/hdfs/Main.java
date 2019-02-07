@@ -27,7 +27,7 @@ public class Main {
       String hdfsuri = args[0];
 */
 
-      String hdfsuri = "hdfs://localhost:51000";
+      String hdfsuri = "hdfs://node-master1-wWqCs:51000";
 
       String path="/tmp/";
       String fileName="hello.csv";
