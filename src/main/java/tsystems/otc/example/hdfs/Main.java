@@ -18,16 +18,16 @@ public class Main {
    public static void main(String[] args) throws Exception {
       //HDFS URI
 
-      /*
+      
       if (args.length<1) {
          logger.severe("1 arg is required :\n\t- hdfsmasteruri (8020 port) ex: hdfs://namenodeserver:8020");
          System.err.println("1 arg is required :\n\t- hdfsmasteruri (8020 port) ex: hdfs://namenodeserver:8020");
          System.exit(128);
       }
       String hdfsuri = args[0];
-*/
 
-      String hdfsuri = "hdfs://node-master1-wWqCs:51000";
+
+      //String hdfsuri = "hdfs://node-master1-wWqCs:51000";
 
       String path="/tmp/";
       String fileName="hello.csv";
