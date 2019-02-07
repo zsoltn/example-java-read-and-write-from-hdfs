@@ -1,14 +1,14 @@
 Example for read & write into HDFS
 ==================
 
-Package for saagie : mvn package and get the package in target.
+Package for the example : mvn package and get the package in target.
 
 Usage in local :
 
  - mvn package
  - java -jar target/example-java-read-and-write-from-hdfs-1.0-SNAPSHOT-jar-with-dependencies.jar hdfs://namenodeserver:8020
 
-Usage in Saagie :
+Usage of the example :
 
  - mvn package (in local, to generate jar file)
  - create new Java Job
