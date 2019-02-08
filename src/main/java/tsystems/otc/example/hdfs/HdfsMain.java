@@ -83,6 +83,8 @@ public class HdfsMain {
                 // conf file
                 conf.addResource(new Path(PATH_TO_HDFS_SITE_XML));
                 conf.addResource(new Path(PATH_TO_CORE_SITE_XML));
+                // NZS!!!!!
+                conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
                 // conf.addResource(new Path(PATH_TO_SMALL_SITE_XML));
         }
 
