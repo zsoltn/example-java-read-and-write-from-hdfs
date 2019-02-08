@@ -1,5 +1,5 @@
 
-package tsystems.otc.example.hdfs;
+package tsystems.otc.hdfsexamplenormal;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.hadoop.conf.Configuration;

@@ -1,4 +1,4 @@
-package tsystems.otc.example.hdfs;
+package tsystems.otc.hdfsexamplenormal;
 
 public class ParameterException extends Exception {
 

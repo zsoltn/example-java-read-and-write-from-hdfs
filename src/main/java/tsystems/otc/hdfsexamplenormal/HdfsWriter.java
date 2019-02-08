@@ -1,4 +1,4 @@
-package tsystems.otc.example.hdfs;
+package tsystems.otc.hdfsexamplenormal;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
