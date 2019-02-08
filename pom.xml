@@ -61,7 +61,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>tsystems.otc.example.hdfs.Main</mainClass>
+                            <mainClass>tsystems.otc.example.hdfs.HdfsMain</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

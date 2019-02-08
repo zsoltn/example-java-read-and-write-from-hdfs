@@ -29,20 +29,20 @@ public class Main {
 
       //String hdfsuri = "hdfs://node-master1-wWqCs:51000";
 
-      String path="/tmp/";
+      String path="/tmp/example";
       String fileName="hello.csv";
       String fileContent="hello;world";
 
       // ====== Init HDFS File System Object
       Configuration conf = new Configuration();
       // Set FileSystem URI
-      conf.set("fs.defaultFS", hdfsuri);
-      // Because of Maven
+//      conf.set("fs.defaultFS", hdfsuri);
+//      // Because of Maven
       conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
-      conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
-      // Set HADOOP user
-      System.setProperty("HADOOP_USER_NAME", "omm");
-      System.setProperty("hadoop.home.dir", "/");
+//      conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
+//      // Set HADOOP user
+//      System.setProperty("HADOOP_USER_NAME", "omm");
+//      System.setProperty("hadoop.home.dir", "/");
       //Get the filesystem - HDFS
       FileSystem fs = FileSystem.get(URI.create(hdfsuri), conf);
 
