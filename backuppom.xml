@@ -45,32 +45,16 @@
         </resources>
 
         <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>2.4.1</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <minimizeJar>false</minimizeJar>
-    <filters>
-        <filter>
-            <artifact>*:*</artifact>
-            <excludes>
-                <exclude>META-INF/*.SF</exclude>
-                <exclude>META-INF/*.DSA</exclude>               
-            </excludes>
-        </filter>
-    </filters>              
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-
+            <plugin>
+              <groupId>io.saagie</groupId>
+               <artifactId>saagie-maven-plugin</artifactId>
+               <version>1.0.2</version>
+               <configuration>
+                 <platformId>1</platformId>
+                 <jobName>example-java-read-and-write-from-hdfs</jobName>
+                 <jobCategory>extract</jobCategory>
+               </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
