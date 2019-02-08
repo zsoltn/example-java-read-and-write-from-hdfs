@@ -1,4 +1,4 @@
-package tsystems.otc.example.hdfs;
+package tsystems.otc.hdfsexamplenormal;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -55,10 +55,10 @@ public class HdfsMain {
                 read();
 
                 // delete file
-                //delete();
+                delete();
 
                 // delete directory
-                //rmdir();
+                rmdir();
         }
 
         /**
@@ -297,7 +297,7 @@ public class HdfsMain {
                 hdfs_examples.examples();
                 // 设置存储策略
                 System.out.println("begin to set Storage Policy");
-                //hdfs_examples.setStoragePolicy(STORAGE_POLICY_HOT);
+                hdfs_examples.setStoragePolicy(STORAGE_POLICY_HOT);
                 System.out.println("set Storage Policy end");
         }
 

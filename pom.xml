@@ -84,7 +84,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>tsystems.otc.example.hdfs.HdfsMain</mainClass>
+                            <mainClass>tsystems.otc.hdfsexamplenormal.HdfsMain</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
