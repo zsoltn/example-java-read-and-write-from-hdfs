@@ -99,6 +99,8 @@ public class HdfsMain {
          */
         private void authentication() throws IOException {
                 // security mode
+                System.out.println("security mode: " + conf.get("hadoop.security.authentication") );
+                
                 if ("kerberos".equalsIgnoreCase(conf.get("hadoop.security.authentication"))) {
                         System.setProperty("java.security.krb5.conf", PATH_TO_KRB5_CONF);
                         LoginUtil.login(PRNCIPAL_NAME, PATH_TO_KEYTAB, PATH_TO_KRB5_CONF, conf);
