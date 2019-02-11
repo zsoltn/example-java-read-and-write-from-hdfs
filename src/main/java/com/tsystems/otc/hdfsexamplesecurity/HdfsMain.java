@@ -25,15 +25,12 @@ public class HdfsMain {
         private String DEST_PATH = "/user/hdfs-examples";
         private String FILE_NAME = "test.txt";
 
-        private static String PRNCIPAL_NAME = "nzs2";
+        private static String PRNCIPAL_NAME = "admin";
 
-        //private static String PATH_TO_KEYTAB = HdfsMain.class.getClassLoader().getResource("user.keytab").getPath();
-        //private static String PATH_TO_KRB5_CONF = HdfsMain.class.getClassLoader().getResource("krb5.conf").getPath();
-        //private static String PATH_TO_HDFS_SITE_XML = HdfsMain.class.getClassLoader().getResource("hdfs-site.xml").getPath();
-        //private static String PATH_TO_CORE_SITE_XML = HdfsMain.class.getClassLoader().getResource("core-site.xml").getPath();
-
+        // PLEASE USE CREDENTIAL 
         private static String PATH_TO_KEYTAB = "/tmp/user.keytab";
         private static String PATH_TO_KRB5_CONF = "/tmp/krb5.conf";
+
         private static String PATH_TO_HDFS_SITE_XML = "/opt/client/HDFS/hadoop/etc/hadoop/hdfs-site.xml";
         private static String PATH_TO_CORE_SITE_XML = "/opt/client/HDFS/hadoop/etc/hadoop/core-site.xml";
 

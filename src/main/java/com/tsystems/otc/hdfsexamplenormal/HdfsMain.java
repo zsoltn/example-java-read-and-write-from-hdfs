@@ -23,11 +23,10 @@ public class HdfsMain {
         private String DEST_PATH = "/user/hdfs-examples";
         private String FILE_NAME = "test.txt";
 
-        private static String USER = "test";
-        private static String PATH_TO_HDFS_SITE_XML = HdfsMain.class.getClassLoader().getResource("hdfs-site.xml")
-                        .getPath();
-        private static String PATH_TO_CORE_SITE_XML = HdfsMain.class.getClassLoader().getResource("core-site.xml")
-                        .getPath();
+        private static String USER = "omm";
+
+        private static String PATH_TO_HDFS_SITE_XML = "/opt/client/HDFS/hadoop/etc/hadoop/hdfs-site.xml";
+        private static String PATH_TO_CORE_SITE_XML = "/opt/client/HDFS/hadoop/etc/hadoop/core-site.xml";
 
         // private static String PATH_TO_SMALL_SITE_XML =
         // HdfsMain.class.getClassLoader().getResource("smallfs-site.xml").getPath();
