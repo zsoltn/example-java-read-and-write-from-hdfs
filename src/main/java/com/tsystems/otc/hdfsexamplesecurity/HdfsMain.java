@@ -25,7 +25,7 @@ public class HdfsMain {
         private String DEST_PATH = "/user/hdfs-examples";
         private String FILE_NAME = "test.txt";
 
-        private static String PRNCIPAL_NAME = "nzs@26654BB7_D538_47E6_9AE7_33E3FD38512F.COM";
+        private static String PRNCIPAL_NAME = "nzs";
         private static String PATH_TO_KEYTAB = HdfsMain.class.getClassLoader().getResource("user.keytab").getPath();
         private static String PATH_TO_KRB5_CONF = HdfsMain.class.getClassLoader().getResource("krb5.conf").getPath();
         private static String PATH_TO_HDFS_SITE_XML = HdfsMain.class.getClassLoader().getResource("hdfs-site.xml")
